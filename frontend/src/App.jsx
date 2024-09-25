@@ -7,6 +7,7 @@ function App() {
 
           <button className={`btn btn-warning`}>버튼2</button>
           <p>테스트3</p>
+          <p>테스트4</p>
       </div>
   )
 }
