@@ -6,20 +6,20 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-logo">
-                <Link to="/">FullStack 405 Study</Link>
+                <Link to="/blog">FullStack 405 Study</Link>
             </div>
             <ul className="navbar-links">
                 <li>
-                    <Link to="/home">Home</Link>
+                    <Link to="/navi/home">Home</Link>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <Link to="/navi/about">About</Link>
                 </li>
                 <li>
-                    <Link to="/services">Services</Link>
+                    <Link to="/navi/services">Services</Link>
                 </li>
                 <li>
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/navi/contact">Contact</Link>
                 </li>
             </ul>
         </nav>
