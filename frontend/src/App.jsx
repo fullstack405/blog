@@ -1,16 +1,23 @@
-function App() {
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar'; // Navbar 경로에 맞게 설정
+import Home from './pages/Home';
+import About from './pages/About';
+import Services from './pages/Services';
+import Contact from './pages/Contact';
 
-  return (
-      <div className={`container`}>
-          <h1>테스트 타이틀</h1>
-          <button className={`btn btn-primary`}>버튼</button>
+const App = () => {
+    return (
+        <Router>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/contact" element={<Contact />} />
+            </Routes>
+        </Router>
+    );
+};
 
-          <button className={`btn btn-warning`}>버튼2</button>
-          <p>테스트3</p>
-          <p>테스트4</p>
-          <p>마지막 자동화 테스트</p>
-      </div>
-  )
-}
-
-export default App
+export default App;
